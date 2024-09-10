@@ -167,7 +167,6 @@
       </section>
     </section>
 
-    
     <section class="section">
       <h2 class="section-title">Formulario de Contacto</h2>
       <form id="contactForm">
@@ -207,23 +206,21 @@
         <button type="submit" class="submit-button">Enviar</button>
       </form>
     </section>
-    
+
     <script>
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", (e) => {
-          e.preventDefault();
+      document.getElementById("contactForm").addEventListener("submit", (e) => {
+        e.preventDefault();
 
-          const name = document.getElementById("name").value;
-          const email = document.getElementById("email").value;
-          const message = document.getElementById("message").value;
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
 
-          if (name && email && message) {
-            alert("¡Formulario enviado con éxito!");
-          } else {
-            alert("Por favor completa todos los campos.");
-          }
-        });
+        if (name && email && message) {
+          alert("¡Formulario enviado con éxito!");
+        } else {
+          alert("Por favor completa todos los campos.");
+        }
+      });
     </script>
   </body>
 </html>
